@@ -1,0 +1,58 @@
+/* This is specifically for the main title "Pokemon Arena!" on the home page */
+#title1 {
+    font-size: 100px;
+    color: gold;
+    border: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    border-color: black;
+    background-color: red;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.title2 {
+    border: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This is specifically to set the background image for the whole site */
+body {
+    background-image: url(images/background.jpg);
+}
+
+/* This is specifically for ALL the navbar decorum */
+#navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 250px;
+    margin-left: 250px;
+    background-color: #333;
+    border: solid;
+    border-radius: 15px;
+    border-color: black;
+    font-size: 25px;
+
+    a:link {
+        color: white;
+    }
+
+    a:hover {
+        color: gold;
+    }
+
+    a:visited {
+        color: gold;
+    }
+
+    text-align: center;
+}
