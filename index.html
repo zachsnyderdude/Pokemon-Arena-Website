@@ -13,20 +13,96 @@
 
 <body>
 
-    <nav>
-        <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pokemon_page.html">Pokemon Page</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main> <!--Main tag used for master centering on CSS file-->
 
-    <img src="images/welcome_to_background.png" alt="welcome message" width="350" height="85" class="title2">
+        <nav> <!--My Navbar-->
 
-    <img src="images/pokemon_logo.png" alt="title" width="450" height="285" class="title2">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pokemon_page.html">Pokemon Page</a></li>
+                <li><a href="placeholder">About</a></li>
+                <li><a href="placeholder">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <section> <!--Sectioning off the title cards. "Welcome To", "Pokemon Arena!" and "By Zach Snyder"-->
+
+            <img src="images/welcome_to_background.png" alt="welcome message" width="350" height="85" class="title2">
+
+            <div class="image-container">
+                <!--Image container for the author's name image to overlay in the title image-->
+                <img src="images/pokemon_logo.png" alt="title" width="450" height="285" class="title2" id="pokeback">
+                <img src="images/by_zach.png" alt="by Zach" width="270" height="60" class="author" id="pokefront">
+            </div>
+
+        </section>
+
+        <article>
+
+            <aside id="aside1">
+                <img src="images/related_links.png" alt="related links" width="250" height="55">
+
+                <h2>Bulbapedia</h2>
+                <p>Pokemon Wiki</p>
+
+                <h2>Pokemon Database</h2>
+                <p>Pokeon Info</p>
+            </aside>
+
+            <aside id="aside2">
+                <img src="images/related_links.png" alt="related links" width="250" height="55">
+
+                <h2>Bulbapedia</h2>
+                <p>Pokemon Wiki</p>
+
+                <h2>Pokemon Database</h2>
+                <p>Pokeon Info</p>
+            </aside>
+
+        </article>
+
+        <section>
+
+            <table>
+                <tr class="ToC">
+                    <td class="cell"><a href="#game">Game Overview</a></td>
+                    <td class="cell"><a href="#starting">Core Mechanics</a></td>
+                    <td class="cell"><a href="#turn">Starting Values</a></td>
+                </tr>
+                <tr class="ToC">
+                    <td class="cell"><a href="#decks">Decks and Cards</a></td>
+                    <td class="cell"><a href="#merchants">Energy and Ability Points</a></td>
+                    <td class="cell"><a href="#quests">Turn Structure</a></td>
+                </tr>
+                <tr class="ToC">
+                    <td class="cell"><a href="#wells">Pokemon Mats</a></td>
+                    <td class="cell"><a href="#gambling">Stats</a></td>
+                    <td class="cell"><a href="#movement">Attacking</a></td>
+                </tr>
+                <tr class="ToC">
+                    <td class="cell"><a href="#characters">Defending</a></td>
+                    <td class="cell"><a href="#equipment">Leveling Up</a></td>
+                    <td class="cell"><a href="#map">Tokens</a></td>
+                </tr>
+                <tr class="ToC">
+                    <td class="cell"><a href="#rules">Cards</a></td>
+                    <td class="cell"><a href="#symbols">Status Effects</a></td>
+                    <td class="cell"><a href="#spinners">Glossary</a></td>
+                </tr>
+            
+            </table><br>
+
+        </section>
+
+        <section>
+
+            <img src="images/game_overview.png" alt="game overview" width="450" height="75" id="game" class="headers">
 
 
+        </section>
+
+    </main>
 
 </body>
 
