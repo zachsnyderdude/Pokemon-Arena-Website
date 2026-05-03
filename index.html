@@ -1,74 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta name="Pokemon Arena!" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Arena!</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
+    <main>
 
-    <main> <!--Main tag used for master centering on CSS file-->
-
-        <nav> <!--My Navbar-->
-
+        <!-- Navbar -->
+        <nav>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pokemon_page.html">Pokemon Page</a></li>
                 <li><a href="placeholder">About</a></li>
                 <li><a href="placeholder">Contact</a></li>
             </ul>
-
         </nav>
 
-        <section> <!--Sectioning off the title cards. "Welcome To", "Pokemon Arena!" and "By Zach Snyder"-->
+        <br><br><br><br><br><br>
 
-            <img src="images/welcome_to_background3.png" alt="welcome message" width="25%" height="25%" class="title3">
+        <!-- Title area -->
+        <section>
+            <img src="images/welcome_to_background3.png" alt="welcome message" width="25%" class="title3">
 
             <div class="image-container">
-                <!--Image container for the author's name image to overlay in the title image-->
-                <img src="images/pokemon_logo.png" alt="title" width="100%" height="100%" class="title2" id="pokeback">
-                <img src="images/by_zach.png" alt="by Zach" width="15%" height="15%" class="author" id="pokefront">
+                <img src="images/pokemon_logo.png" alt="title" width="100%" class="title2" id="pokeback">
+                <img src="images/by_zach.png" alt="by Zach" width="15%" class="author" id="pokefront">
             </div>
-
         </section>
 
-        <article> <!--These are my asides for ads or whatever tf else I can use them for-->
+        <!-- Asides -->
+        <aside id="aside1">
+            <img src="images/related_links.png" alt="related links" width="90%">
 
-            <aside id="aside1">
-                <img src="images/related_links.png" alt="related links" width="250" height="55">
+            <h2>Bulbapedia</h2>
+            <p>Pokemon Wiki</p>
 
-                <h2>Bulbapedia</h2>
-                <p>Pokemon Wiki</p>
+            <h2>Pokemon Database</h2>
+            <p>Pokemon Info</p>
 
-                <h2>Pokemon Database</h2>
-                <p>Pokeon Info</p>
-            </aside>
+            <h2>The Offical Pokemon Website</h2>
+            <p>Everything Pokemon</p>
 
-            <aside id="aside2">
-                <img src="images/related_links.png" alt="related links" width="250" height="55">
+            <h2>Pokemon Center</h2>
+            <p>The Pokemon Store</p>
 
-                <h2>Bulbapedia</h2>
-                <p>Pokemon Wiki</p>
+            <h2>Play! Pokemon</h2>
+            <p>How About Pokemon Arena!...?</p>
 
-                <h2>Pokemon Database</h2>
-                <p>Pokeon Info</p>
-            </aside>
+            <h2>Pokeos</h2>
+            <p>TCG Info</p>
 
-        </article>
+        </aside>
+
+        <aside id="aside2">
+            <img src="images/ads.png" alt="related links" width="97%">
+
+            <h2>Poopoo Pedia</h2>
+            <p>Poop Wiki</p>
+
+            <h2>Poopy Database</h2>
+            <p>Poop Info</p>
+
+            <h2>Sharty Sharterson</h2>
+            <p>A Family Story</p>
+
+            <h2>On The Poop!</h2>
+            <p>Apply Now</p>
+
+            <h2>People's Poops</h2>
+            <p>Poopers Digest</p>
+
+            <h2>Peepers Intrigue?</h2>
+            <p>Hide!</p>
+        </aside>
 
         <br><br>
         <hr>
+        <br>
 
-        <img src="images/table_of_contents.png" alt="table of contents" width="35%" height="35%" class="topHeader">
+        <!-- Table of contents -->
+        <img src="images/table_of_contents.png" alt="table of contents" width="35%" class="topHeader">
 
-        <section> <!--This section contains the table of contents table-->
-
+        <section>
             <table>
                 <tr>
                     <td><a href="#game" class="top">Game Overview</a></td>
@@ -76,51 +94,52 @@
                     <td><a href="#starting" class="top">Starting Values</a></td>
                     <td></td>
                 </tr>
+
                 <tr>
                     <td><a href="#decks" class="top">Decks and Cards</a></td>
                     <td><a href="#points" class="top">Energy and Ability Points</a></td>
                     <td></td>
                     <td><a href="#turn" class="bottom">Turn Structure</a></td>
                 </tr>
+
                 <tr>
-                    
                     <td><a href="#mats" class="top">Pokemon Mats</a></td>
-                    <td colspan="2-3"><a href="#stats" class="middle">Stats</a></td>
+                    <td colspan="2"><a href="#stats" class="middle">Stats</a></td>
                     <td><a href="#attacking" class="bottom">Attacking</a></td>
                 </tr>
+
                 <tr>
                     <td><a href="#defending" class="top">Defending</a></td>
                     <td></td>
                     <td><a href="#leveling" class="bottom">Leveling Up</a></td>
                     <td><a href="#tokens" class="bottom">Tokens</a></td>
                 </tr>
+
                 <tr>
                     <td></td>
                     <td><a href="#cards" class="bottom">Cards</a></td>
                     <td><a href="#status" class="bottom">Status Effects</a></td>
                     <td><a href="#glossary" class="bottom">Glossary</a></td>
                 </tr>
-
-            </table><br>
-
+            </table>
         </section>
 
-        <br>
+        <br><br>
         <hr>
 
-        <section class="section1"> <!--This section contains the "Game Overview" part of the rules-->
+        <!-- Game Overview -->
+        <section class="section1">
+            <img src="images/game_overview.png" alt="game overview" width="60%" id="game" class="headers">
 
-            <img src="images/game_overview.png" alt="game overview" width="450" height="75" id="game" class="headers">
-
-            <p class="bodytext">Pokémon Arena is a head-to-head battle game inspired by games like Dice Throne.<br>
+            <p class="bodytext">
+                Pokémon Arena is a head-to-head battle game inspired by games like Dice Throne.<br>
                 Players select a Pokémon and use attacks, defenses, and strategy to reduce their opponent’s HP to 0.<br>
-                The game supports multiplayer and team formats, but this rulebook focuses on <strong>1v1
-                    battles</strong>.</p>
-
+                The game supports multiplayer and team formats, but this rulebook focuses on
+                <strong>1v1 battles</strong>.
+            </p>
         </section>
 
-        <section class="section2"> <!--This section contains the subtext to the "Game Overview" rules-->
-
+        <section class="section2">
             <p class="bodytext2">Each player:</p>
 
             <ul class="list1">
@@ -129,67 +148,137 @@
                 <li class="bodytext2">Builds their stats over time</li>
                 <li class="bodytext2">Uses attacks and defenses to outplay their opponent</li>
             </ul>
-
         </section>
 
+        <br>
         <hr>
+        <br>
 
+        <!-- Core Mechanics -->
         <section>
-
-            <img src="images/core_mechanics.png" alt="game overview" width="450" height="75" id="core" class="headers">
-
+            <img src="images/core_mechanics.png" alt="core mechanics" width="38%" id="core" class="headers">
         </section>
 
         <section class="section3">
-
             <div class="list-container">
 
                 <div class="list-column">
-                    <p>Each player selects one Pokemon to play as:</p>
+                    <p class="bodytext3">Each player selects one Pokemon to play as:</p>
+
                     <ul class="list1">
-                        <li>Charizard (Fire/Flying)</li>
-                        <li>Pikachu (Electric)</li>
-                        <li>Exeggutor (Grass/Psychic)</li>
-                        <li>Greninja (Water/Dark)</li>
-                        <li>Alolan Ninetales (Fairy/Ice)</li>
-                        <li>Gengar (Ghost/Poison)</li>
-                        <li>Lucario (Fighting/Steel)</li>
-                        <li>Garchomp (Ground/Dragon)</li>
+                        <li class="bodytext3">Charizard (Fire/Flying)</li>
+                        <li class="bodytext3">Pikachu (Electric)</li>
+                        <li class="bodytext3">Exeggutor (Grass/Psychic)</li>
+                        <li class="bodytext3">Greninja (Water/Dark)</li>
+                        <li class="bodytext3">Alolan Ninetales (Fairy/Ice)</li>
+                        <li class="bodytext3">Gengar (Ghost/Poison)</li>
+                        <li class="bodytext3">Lucario (Fighting/Steel)</li>
+                        <li class="bodytext3">Garchomp (Ground/Dragon)</li>
                     </ul>
                 </div>
 
                 <div class="divider"></div>
 
                 <div class="list-column">
-                    <p>Each Pokemon has a character mat, which includes:</p>
+                    <p class="bodytext3">Each Pokemon has a character mat, which includes:</p>
+
                     <ul class="list1">
-                        <li>Passive ability</li>
-                        <li>Description</li>
-                        <li>Type</li>
-                        <li>Innate attack</li>
-                        <li>Slots for:
-                            <ul>
-                                <li>4 attack moves</li>
-                                <li>2 defense moves</li>
-                            </ul>
-                        </li>
+                        <li class="bodytext3">Passive ability</li>
+                        <li class="bodytext3">Description</li>
+                        <li class="bodytext3">Type</li>
+                        <li class="bodytext3">Innate attack</li>
+                        <li class="bodytext3">Slots for 4 attack moves and 2 defense moves</li>
                     </ul>
                 </div>
 
             </div>
         </section>
 
+        <br>
+        <hr>
+        <br>
 
+        <!-- Starting Values -->
+        <section>
+            <img src="images/starting_values.png" alt="starting values" width="36%" id="starting" class="headers">
+        </section>
+
+        <section class="charizardLayout">
+            <img src="images/charizard_background2.webp" alt="charizard" class="charizard">
+
+            <div class="textContent section4">
+                <p class="bodytext4">Health (HP)</p>
+
+                <ul class="list2">
+                    <li class="bodytext4">Recommended starting HP: 40</li>
+                    <li class="bodytext4">Maximum HP: Starting HP + 10</li>
+                </ul>
+
+                <p class="bodytext4">Starting Resources</p>
+
+                <ul class="list2">
+                    <li class="bodytext4">5 Energy Points (EP)</li>
+                    <li class="bodytext4">5 Ability Points (AP)</li>
+                </ul>
+
+                <p class="bodytext4">Starting Setup</p>
+
+                <ul class="list2">
+                    <li class="bodytext4">Draw 5 cards</li>
+                    <li class="bodytext4">You may place:</li>
+                        <ul class="list2">
+                            <li class="bodytext4">1 attack move (free)</li>
+                            <li class="bodytext4">1 defense move (free)</li>
+                        </ul>
+                </ul>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br>
+
+        <!-- Decks and Cards -->
+        <section>
+            <img src="images/decks_and_cards.png" alt="decks and cards" id="decks" class="headers" width="40%">
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Energy Points (EP) & Ability Points (AP) -->
+         <section>
+            <img src="images/EP.png" alt="EP and AP" id="points" class="headers" width="45%">
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Turn Structure -->
+         <section>
+            <img src="images/turn_structure.png" alt="turn structure" id="turns" class="headers" width="40%">
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Pokemon Mats -->
+         <section>
+            <img src="images/mats.png" alt="pokemon mats" id="mats" class="headers" width="37%">
+            <img src="images/charizard_mat.jpg" width="50%" class="headers">
+            <img src="images/pikachu_mat.jpg" width="50%" class="headers">
+        </section>
+
+        <br>
+        <hr>
+        <br>
 
     </main>
 
+    <footer></footer>
 </body>
-
-<footer>
-
-
-
-</footer>
-
 
 </html>
