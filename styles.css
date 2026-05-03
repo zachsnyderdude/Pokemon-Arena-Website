@@ -1,8 +1,11 @@
 /* ================= WHOLE PAGE BACKGROUND ================= */
+<<<<<<< HEAD
 
 html {
     scroll-behavior: smooth;
 }
+=======
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
 
 body {
     margin: 0;
@@ -14,12 +17,15 @@ body {
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 /* Keeps images from overflowing */
 img {
     max-width: 100%;
     height: auto;
 }
 
+=======
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
 /* ================= MASTER CENTERING SYSTEM ================= */
 
 main {
@@ -35,8 +41,13 @@ main {
 
 #navbar {
     position: fixed;
+<<<<<<< HEAD
     top: 0;
     left: 50%;
+=======
+    top: 0px;  
+    left: 50%;           
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     transform: translateX(-50%);
     z-index: 1000;
 
@@ -46,7 +57,11 @@ main {
     flex-wrap: wrap;
     gap: 10px;
 
+<<<<<<< HEAD
     width: clamp(320px, 60%, 900px);
+=======
+    width: 60%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     padding: 10px;
 
     background-color: #333;
@@ -74,6 +89,7 @@ main {
 .title2 {
     border: 3px solid black;
     border-radius: 15px;
+<<<<<<< HEAD
 }
 
 .title2, .title3, .headers, .author {
@@ -86,6 +102,18 @@ main {
     display: block;
     margin: 70px auto 20px;
     max-width: 90%;
+=======
+}
+
+.title2, .title3, .headers, .author {
+    display: block;
+    margin: 20px auto;
+}
+
+.topHeader {
+    display: block;
+    margin: 50px auto 20px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
 }
 
 /* ================= IMAGE OVERLAY SYSTEM ================= */
@@ -103,10 +131,17 @@ main {
 
 #pokefront {
     position: absolute;
+<<<<<<< HEAD
     right: -8%;
     bottom: 0;
 
     width: 48%;
+=======
+    right: -40px;
+    bottom: 0;
+
+    width: 240px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     transform: rotate(-20deg);
 }
 
@@ -114,9 +149,15 @@ main {
 
 #aside1, #aside2 {
     position: fixed;
+<<<<<<< HEAD
     top: 10%;
 
     width: clamp(150px, 17%, 260px);
+=======
+    top: 150px;
+
+    width: 17%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     padding: 10px;
 
     color: red;
@@ -146,31 +187,50 @@ table {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
     color: black;
+<<<<<<< HEAD
     font-size: clamp(14px, 1.6vw, 19px);
     text-align: center;
 
     width: min(60%, 850px);
+=======
+    font-size: 19px;
+    text-align: center;
+
+    width: 60%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     table-layout: fixed;
 
     margin: 20px auto;
     padding: 0;
     border: 4px solid black;
     border-radius: 15px;
+<<<<<<< HEAD
     border-spacing: clamp(6px, 1vw, 15px);
+=======
+    border-spacing: 15px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     border-collapse: separate;
 
     background-image: url(images/pokemon_background.webp);
     background-size: cover;
+<<<<<<< HEAD
     background-position: center;
+=======
+    background-position: 0 -38px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     background-repeat: no-repeat;
 }
 
 td {
+<<<<<<< HEAD
     padding: 15px 4px;
     text-align: center;
     vertical-align: middle;
     word-break: normal;
     overflow-wrap: break-word;
+=======
+    padding: 15px 0 15px 4px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
 }
 
 .top, .middle, .bottom {
@@ -195,10 +255,17 @@ td {
 
 .bodytext {
     color: white;
+<<<<<<< HEAD
     font-size: clamp(16px, 2vw, 21px);
     text-align: center;
 
     width: min(60%, 850px);
+=======
+    font-size: 21px;
+    text-align: center;
+
+    width: 60%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     margin: 20px auto;
 
     -webkit-text-stroke: 0.25px black;
@@ -206,7 +273,11 @@ td {
 
 .bodytext2 {
     color: white;
+<<<<<<< HEAD
     font-size: clamp(16px, 2vw, 21px);
+=======
+    font-size: 21px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     margin-bottom: 5px;
 
     -webkit-text-stroke: 0.25px gold;
@@ -214,12 +285,20 @@ td {
 
 .bodytext3 {
     color: black;
+<<<<<<< HEAD
     font-size: clamp(16px, 2vw, 20px);
+=======
+    font-size: 20px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     font-weight: 600;
 
     margin-bottom: 5px;
     margin-left: 20px;
+<<<<<<< HEAD
     padding-left: clamp(20px, 7vw, 100px);
+=======
+    padding-left: 100px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     padding-right: 20px;
 
     -webkit-text-stroke: 0.25px grey;
@@ -227,6 +306,7 @@ td {
 
 .bodytext4 {
     color: black;
+<<<<<<< HEAD
     font-size: clamp(16px, 2vw, 20px);
     font-weight: 600;
 
@@ -240,6 +320,9 @@ td {
 .bodytext5 {
     color: black;
     font-size: clamp(16px, 2vw, 20px);
+=======
+    font-size: 20px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     font-weight: 600;
 
     margin-top: 0;
@@ -252,7 +335,11 @@ td {
 /* ================= SECTION STYLING ================= */
 
 .section1 {
+<<<<<<< HEAD
     width: min(60%, 850px);
+=======
+    width: 60%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     margin: 20px auto;
     padding-top: 50px;
     padding-bottom: 70px;
@@ -264,7 +351,11 @@ td {
 }
 
 .section2 {
+<<<<<<< HEAD
     width: min(40%, 600px);
+=======
+    width: 40%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     margin: 20px auto;
 
     text-align: center;
@@ -273,11 +364,19 @@ td {
 
     background-image: url(images/pika2.jpg);
     background-size: cover;
+<<<<<<< HEAD
     background-position: center;
 }
 
 .section3 {
     width: min(75%, 1000px);
+=======
+    background-position: 40px -80px;
+}
+
+.section3 {
+    width: 75%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     margin: 20px auto;
 
     text-align: center;
@@ -294,6 +393,7 @@ td {
 
     background-image: url(images/pika.jpg);
     background-size: cover;
+<<<<<<< HEAD
     background-position: center;
 }
 
@@ -304,6 +404,9 @@ td {
     background-image: url(images/);
     background-size: cover;
     background-position: center;
+=======
+    background-position: 0px 10px;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
 }
 
 hr {
@@ -350,7 +453,11 @@ hr {
     justify-content: center;
     gap: 10px;
 
+<<<<<<< HEAD
     width: min(80%, 1000px);
+=======
+    width: 80%;
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
     margin: 0 auto;
 }
 
@@ -361,6 +468,7 @@ hr {
 .textContent {
     width: 60%;
     text-align: left;
+<<<<<<< HEAD
 }
 
 .textContent2 {
@@ -464,4 +572,6 @@ hr {
     td {
         padding: 10px 3px;
     }
+=======
+>>>>>>> 3b6b1c142e6d972b5738ebee2be0a3c093f7a369
 }
