@@ -1,32 +1,59 @@
-/* BACKGROUND IMAGE */  
+/* ================= WHOLE PAGE BACKGROUND ================= */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
     background-image: url(images/background.jpg);
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* MASTER CENTERING SYSTEM */
+/* Keeps images from overflowing */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= MASTER CENTERING SYSTEM ================= */
+
 main {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 /* ================= NAVBAR ================= */
+
 #navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
 
-    width: 100%;
+    width: clamp(320px, 60%, 900px);
     padding: 10px;
 
     background-color: #333;
     border: 3px solid black;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: clamp(16px, 2vw, 25px);
+    box-sizing: border-box;
 }
 
 #navbar a {
@@ -42,25 +69,30 @@ main {
     color: gold;
 }
 
-/* ================= TITLE IMAGES ================= */
+/* ================= TITLE / HEADER IMAGES ================= */
+
 .title2 {
     border: 3px solid black;
     border-radius: 15px;
-
-    display: block;
-    margin: 20px auto;
 }
 
-/* ================= HEADER TITLES ================== */
-.headers {
+.title2, .title3, .headers, .author {
     display: block;
     margin: 20px auto;
+    max-width: 90%;
+}
+
+.topHeader {
+    display: block;
+    margin: 70px auto 20px;
+    max-width: 90%;
 }
 
 /* ================= IMAGE OVERLAY SYSTEM ================= */
+
 .image-container {
     position: relative;
-    width: 500px;
+    width: min(500px, 90%);
     margin: 20px auto;
 }
 
@@ -71,17 +103,20 @@ main {
 
 #pokefront {
     position: absolute;
+    right: -8%;
     bottom: 0;
-    right: -40px;
-    width: 240px;
+
+    width: 48%;
     transform: rotate(-20deg);
 }
 
 /* ================= ASIDES ================= */
+
 #aside1, #aside2 {
     position: fixed;
-    top: 150px;
-    width: 18%;
+    top: 10%;
+
+    width: clamp(150px, 17%, 260px);
     padding: 10px;
 
     color: red;
@@ -94,6 +129,7 @@ main {
     background-repeat: no-repeat;
 
     -webkit-text-stroke: 0.25px black;
+    box-sizing: border-box;
 }
 
 #aside1 {
@@ -104,40 +140,328 @@ main {
     right: 20px;
 }
 
-/* ================= AUTHOR IMAGE ================= */
-.author {
-    display: block;
-    margin: 20px auto;
-}
+/* ================= TABLE OF CONTENTS ================= */
 
-/* ================= TABLE OF CONTENTS ================*/
-.ToC, table {
+table {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
     color: black;
-    font-size: 18px;
+    font-size: clamp(14px, 1.6vw, 19px);
     text-align: center;
+
+    width: min(60%, 850px);
+    table-layout: fixed;
+
     margin: 20px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-spacing: 5px;
-}
-
-td, tr {
-    border: 2px solid black;
-    border-collapse: separate;
+    padding: 0;
+    border: 4px solid black;
     border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
+    border-spacing: clamp(6px, 1vw, 15px);
+    border-collapse: separate;
+
+    background-image: url(images/pokemon_background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.cell {
-    background-color: rgb(222, 222, 6);
+td {
+    padding: 15px 4px;
+    text-align: center;
+    vertical-align: middle;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
-a {
-    color: black;
+.top, .middle, .bottom {
+    font-weight: 600;
     margin: 20px;
-    text-decoration: none;
+    text-decoration: underline black;
+}
+
+.top {
+    color: black;
+}
+
+.middle {
+    color: grey;
+}
+
+.bottom {
+    color: red;
+}
+
+/* ================= BODY TEXT STYLING ================= */
+
+.bodytext {
+    color: white;
+    font-size: clamp(16px, 2vw, 21px);
+    text-align: center;
+
+    width: min(60%, 850px);
+    margin: 20px auto;
+
+    -webkit-text-stroke: 0.25px black;
+}
+
+.bodytext2 {
+    color: white;
+    font-size: clamp(16px, 2vw, 21px);
+    margin-bottom: 5px;
+
+    -webkit-text-stroke: 0.25px gold;
+}
+
+.bodytext3 {
+    color: black;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 600;
+
+    margin-bottom: 5px;
+    margin-left: 20px;
+    padding-left: clamp(20px, 7vw, 100px);
+    padding-right: 20px;
+
+    -webkit-text-stroke: 0.25px grey;
+}
+
+.bodytext4 {
+    color: black;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 600;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+    -webkit-text-stroke: 0.25px grey;
+}
+
+.bodytext5 {
+    color: black;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 600;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+    -webkit-text-stroke: 0.25px grey;
+}
+
+/* ================= SECTION STYLING ================= */
+
+.section1 {
+    width: min(60%, 850px);
+    margin: 20px auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    background-image: url(images/red.png);
+    background-size: contain;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+
+.section2 {
+    width: min(40%, 600px);
+    margin: 20px auto;
+
+    text-align: center;
+    border: 3px solid gold;
+    border-radius: 15px;
+
+    background-image: url(images/pika2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section3 {
+    width: min(75%, 1000px);
+    margin: 20px auto;
+
+    text-align: center;
+
+    background-image: url(images/orange2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section4 {
+    border: 3px solid black;
+    border-radius: 15px;
+
+    background-image: url(images/pika.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section5 {
+    border: 3px solid black;
+    border-radius: 15px;
+
+    background-image: url(images/);
+    background-size: cover;
+    background-position: center;
+}
+
+hr {
+    border: solid;
+    color: black;
+    width: 80%;
+}
+
+/* ================= LIST STYLING ================= */
+
+.list1, .list2 {
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.list2 {
+    margin-bottom: 0;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.list-column {
+    width: 100%;
+    text-align: left;
+}
+
+.divider {
+    width: 2px;
+    background-color: black;
+}
+
+/* ================= STARTING VALUES / CHARIZARD LAYOUT ================= */
+
+.charizardLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: min(80%, 1000px);
+    margin: 0 auto;
+}
+
+.charizard {
+    width: 50%;
+}
+
+.textContent {
+    width: 60%;
+    text-align: left;
+}
+
+.textContent2 {
+    width: 40%;
+    text-align: left;
+}
+
+/* ================= DECKS AND CARDS / GENGAR LAYOUT ================= */
+
+.gengarLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: min(80%, 1000px);
+    margin: 0 auto;
+}
+
+.gengar {
+    width: 50%;
+}
+/* ================= RESPONSIVE FIXES ================= */
+
+@media (max-width: 1100px) {
+    #aside1, #aside2 {
+        width: 140px;
+        font-size: 14px;
+    }
+
+    #aside1 {
+        left: 5px;
+    }
+
+    #aside2 {
+        right: 5px;
+    }
+
+    table, .bodytext, .section1 {
+        width: 70%;
+    }
+}
+
+@media (max-width: 850px) {
+    #aside1, #aside2 {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    table, .bodytext, .section1, .section2, .section3 {
+        width: 90%;
+    }
+
+    .list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .charizardLayout {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .charizard, .textContent {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        width: 95%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .topHeader {
+        margin-top: 90px;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    #pokefront {
+        width: 45%;
+        right: -4%;
+    }
+
+    table {
+        width: 95%;
+        border-spacing: 5px;
+        font-size: 13px;
+    }
+
+    td {
+        padding: 10px 3px;
+    }
 }
