@@ -28,17 +28,17 @@
 
         <section> <!--Sectioning off the title cards. "Welcome To", "Pokemon Arena!" and "By Zach Snyder"-->
 
-            <img src="images/welcome_to_background.png" alt="welcome message" width="350" height="85" class="title2">
+            <img src="images/welcome_to_background3.png" alt="welcome message" width="25%" height="25%" class="title3">
 
             <div class="image-container">
                 <!--Image container for the author's name image to overlay in the title image-->
-                <img src="images/pokemon_logo.png" alt="title" width="450" height="285" class="title2" id="pokeback">
-                <img src="images/by_zach.png" alt="by Zach" width="270" height="60" class="author" id="pokefront">
+                <img src="images/pokemon_logo.png" alt="title" width="100%" height="100%" class="title2" id="pokeback">
+                <img src="images/by_zach.png" alt="by Zach" width="15%" height="15%" class="author" id="pokefront">
             </div>
 
         </section>
 
-        <article>
+        <article> <!--These are my asides for ads or whatever tf else I can use them for-->
 
             <aside id="aside1">
                 <img src="images/related_links.png" alt="related links" width="250" height="55">
@@ -62,45 +62,124 @@
 
         </article>
 
-        <section>
+        <br><br>
+        <hr>
+
+        <img src="images/table_of_contents.png" alt="table of contents" width="35%" height="35%" class="topHeader">
+
+        <section> <!--This section contains the table of contents table-->
 
             <table>
-                <tr class="ToC">
-                    <td class="cell"><a href="#game">Game Overview</a></td>
-                    <td class="cell"><a href="#starting">Core Mechanics</a></td>
-                    <td class="cell"><a href="#turn">Starting Values</a></td>
+                <tr>
+                    <td><a href="#game" class="top">Game Overview</a></td>
+                    <td><a href="#core" class="top">Core Mechanics</a></td>
+                    <td><a href="#starting" class="top">Starting Values</a></td>
+                    <td></td>
                 </tr>
-                <tr class="ToC">
-                    <td class="cell"><a href="#decks">Decks and Cards</a></td>
-                    <td class="cell"><a href="#merchants">Energy and Ability Points</a></td>
-                    <td class="cell"><a href="#quests">Turn Structure</a></td>
+                <tr>
+                    <td><a href="#decks" class="top">Decks and Cards</a></td>
+                    <td><a href="#points" class="top">Energy and Ability Points</a></td>
+                    <td></td>
+                    <td><a href="#turn" class="bottom">Turn Structure</a></td>
                 </tr>
-                <tr class="ToC">
-                    <td class="cell"><a href="#wells">Pokemon Mats</a></td>
-                    <td class="cell"><a href="#gambling">Stats</a></td>
-                    <td class="cell"><a href="#movement">Attacking</a></td>
+                <tr>
+                    
+                    <td><a href="#mats" class="top">Pokemon Mats</a></td>
+                    <td colspan="2-3"><a href="#stats" class="middle">Stats</a></td>
+                    <td><a href="#attacking" class="bottom">Attacking</a></td>
                 </tr>
-                <tr class="ToC">
-                    <td class="cell"><a href="#characters">Defending</a></td>
-                    <td class="cell"><a href="#equipment">Leveling Up</a></td>
-                    <td class="cell"><a href="#map">Tokens</a></td>
+                <tr>
+                    <td><a href="#defending" class="top">Defending</a></td>
+                    <td></td>
+                    <td><a href="#leveling" class="bottom">Leveling Up</a></td>
+                    <td><a href="#tokens" class="bottom">Tokens</a></td>
                 </tr>
-                <tr class="ToC">
-                    <td class="cell"><a href="#rules">Cards</a></td>
-                    <td class="cell"><a href="#symbols">Status Effects</a></td>
-                    <td class="cell"><a href="#spinners">Glossary</a></td>
+                <tr>
+                    <td></td>
+                    <td><a href="#cards" class="bottom">Cards</a></td>
+                    <td><a href="#status" class="bottom">Status Effects</a></td>
+                    <td><a href="#glossary" class="bottom">Glossary</a></td>
                 </tr>
-            
+
             </table><br>
 
         </section>
 
-        <section>
+        <br>
+        <hr>
+
+        <section class="section1"> <!--This section contains the "Game Overview" part of the rules-->
 
             <img src="images/game_overview.png" alt="game overview" width="450" height="75" id="game" class="headers">
 
+            <p class="bodytext">Pokémon Arena is a head-to-head battle game inspired by games like Dice Throne.<br>
+                Players select a Pokémon and use attacks, defenses, and strategy to reduce their opponent’s HP to 0.<br>
+                The game supports multiplayer and team formats, but this rulebook focuses on <strong>1v1
+                    battles</strong>.</p>
 
         </section>
+
+        <section class="section2"> <!--This section contains the subtext to the "Game Overview" rules-->
+
+            <p class="bodytext2">Each player:</p>
+
+            <ul class="list1">
+                <li class="bodytext2">Chooses 1 Pokémon</li>
+                <li class="bodytext2">Uses a unique deck</li>
+                <li class="bodytext2">Builds their stats over time</li>
+                <li class="bodytext2">Uses attacks and defenses to outplay their opponent</li>
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <img src="images/core_mechanics.png" alt="game overview" width="450" height="75" id="core" class="headers">
+
+        </section>
+
+        <section class="section3">
+
+            <div class="list-container">
+
+                <div class="list-column">
+                    <p>Each player selects one Pokemon to play as:</p>
+                    <ul class="list1">
+                        <li>Charizard (Fire/Flying)</li>
+                        <li>Pikachu (Electric)</li>
+                        <li>Exeggutor (Grass/Psychic)</li>
+                        <li>Greninja (Water/Dark)</li>
+                        <li>Alolan Ninetales (Fairy/Ice)</li>
+                        <li>Gengar (Ghost/Poison)</li>
+                        <li>Lucario (Fighting/Steel)</li>
+                        <li>Garchomp (Ground/Dragon)</li>
+                    </ul>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="list-column">
+                    <p>Each Pokemon has a character mat, which includes:</p>
+                    <ul class="list1">
+                        <li>Passive ability</li>
+                        <li>Description</li>
+                        <li>Type</li>
+                        <li>Innate attack</li>
+                        <li>Slots for:
+                            <ul>
+                                <li>4 attack moves</li>
+                                <li>2 defense moves</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
 
     </main>
 
