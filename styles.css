@@ -75,9 +75,12 @@ main {
 .title2 {
     border: 3px solid black;
     border-radius: 15px;
+
+    display: block;
+    margin: 20px auto;
 }
 
-.title2, .title3, .headers, .author {
+.title3, .headers, .author {
     display: block;
     margin: 20px auto;
     max-width: 90%;
@@ -93,21 +96,20 @@ main {
 
 .image-container {
     position: relative;
-    width: min(500px, 90%);
     margin: 20px auto;
 }
 
 #pokeback {
-    width: 100%;
+    width: 50%;
     display: block;
 }
 
 #pokefront {
     position: absolute;
-    right: -8%;
+    right: 20%;
     bottom: 0;
 
-    width: 48%;
+    width: 24%;
     transform: rotate(-20deg);
 }
 
@@ -215,29 +217,29 @@ td {
     color: white;
     font-size: clamp(16px, 2vw, 21px);
     margin-bottom: 5px;
+    font-weight: 600;
 
-    text-shadow: 2px 2px 5px gold;
-    -webkit-text-stroke: 0.25px gold;
+    text-shadow: 2px 2px 5px black;
+    -webkit-text-stroke: 0.25px black;
 }
 
 .bodytext3 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: black;
+    color: white;
     font-size: clamp(16px, 2vw, 19px);
     font-weight: 600;
 
     margin-bottom: 5px;
-    margin-left: 20px;
-    padding-left: clamp(20px, 7vw, 100px);
-    padding-right: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
 
-    text-shadow: 2px 2px 5px grey;
-    -webkit-text-stroke: 0.25px grey;
+    text-shadow: 2px 2px 5px black;
+    -webkit-text-stroke: 0.25px black;
 }
 
 .bodytext4 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: black;
+    color: white;
     font-size: clamp(16px, 2vw, 20px);
     font-weight: 600;
 
@@ -245,13 +247,13 @@ td {
     margin-bottom: 5px;
     margin-left: 10px;
 
-    text-shadow: 2px 2px 5px grey;
-    -webkit-text-stroke: 0.25px grey;
+    text-shadow: 2px 2px 5px black;
+    -webkit-text-stroke: 0.25px black;
 }
 
 .bodytext5 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: black;
+    color: white;
     font-size: clamp(16px, 2vw, 20px);
     font-weight: 600;
 
@@ -259,8 +261,8 @@ td {
     margin-bottom: 5px;
     margin-left: 10px;
 
-    text-shadow: 2px 2px 5px blue;
-    -webkit-text-stroke: 0.25px blue;
+    text-shadow: 2px 2px 5px black;
+    -webkit-text-stroke: 0.25px black;
 }
 
 .bodytext6 {
@@ -334,24 +336,25 @@ td {
 .section2 {
     width: min(45%, 600px);
     margin: 20px auto;
-
     text-align: center;
-    border: 3px solid gold;
+    border: 3px solid black;
     border-radius: 15px;
+    padding: 1%;
 
-    background-image: url(images/pika2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/pikachu3.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .section3 {
-    width: min(75%, 1000px);
+    width: min(65%, 1000px);
+    border: 3px solid black;
+    border-radius: 15px;
     margin: 20px auto;
-
     text-align: center;
 
-    background-image: url(images/orange2.png);
-    background-size: contain;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/greninja.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -359,30 +362,30 @@ td {
 .section4 {
     border: 3px solid black;
     border-radius: 15px;
-    padding: 1%;
+    padding: 3%;
 
-    background-image: url(images/pika.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/leafeon.jpg);
     background-size: cover;
-    background-position: 30% 10px;
+    background-position: center;
 }
 
 .section5 {
     border: 3px solid black;
     border-radius: 15px;
-    padding: 1%;
+    padding: 3%;
 
-    background-image: url(images/pokeball_background2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/umbreon.jpg);
     background-size: cover;
-    background-position: 90px -60px;
+    background-position: center;
 }
 
 .section6 {
     border: 3px solid black;
     border-radius: 15px;
     margin: 20px auto;
-    padding: 1%;
+    padding: 3%;
 
-    background-image: url(images/garchomp.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/garchomp3.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -394,7 +397,7 @@ td {
     padding: 1%;
     width: 60%;
 
-    background-image: url(images/bulbasaur2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/bulbasaur2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -407,10 +410,25 @@ td {
     padding: 1%;
     width: 60%;
 
-    /* background-image: url(images/); */
-    background-color: grey;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/lucario.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 0% 20%;
+}
+
+.section9 {
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 3%;
+    width: 60%;
+
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(images/pokeball.png),
+    url(images/ninetales.jpg);
+    
+    background-size: cover, 200px, cover;
+    background-repeat: no-repeat;
+    background-position: center, 80% 80%, 0% 20%;
 }
 
 hr {
@@ -424,7 +442,7 @@ hr {
 .list1, .list2 {
     list-style-position: inside;
     text-align: left;
-    display: inline-block;
+    display: block;
     margin-top: 0;
 }
 
@@ -437,10 +455,11 @@ hr {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+    padding: 3%;
 }
 
 .list-column {
-    width: 100%;
+    width: auto;
     text-align: left;
 }
 
@@ -453,6 +472,9 @@ hr {
     background-color: black;
 }
 
+.breakout {
+    list-style: none;
+}
 /* ================= STARTING VALUES / CHARIZARD LAYOUT ================= */
 
 .charizardLayout {
@@ -496,6 +518,7 @@ hr {
 }
 
 /* ================= RESPONSIVE FIXES ================= */
+/* Trying to make this work on other devices besides desktops */
 
 @media (max-width: 1100px) {
 
