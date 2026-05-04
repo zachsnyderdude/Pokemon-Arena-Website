@@ -393,11 +393,6 @@
 
         <section class="section9">
 
-            <!-- <div class="image-container">
-                <img src="images/ninetales.jpg" alt="title" width="100%" class="title2 section9" id="pokeback">
-                <img src="images/pokeball.png" alt="by Zach" width="15%" class="author" id="pokefront">
-            </div> -->
-
             <div class="list-container">
 
                 <div class="list-column">
@@ -452,6 +447,250 @@
         <br><br>
         <hr>
         <br><br>
+
+        <!-- Stats -->
+        <section>
+            <img src="images/stats.png" alt="turn structure" id="stats" class="headers" width="17%">
+        </section>
+
+        <section>
+
+            Overview
+            Stats represent how your Pokémon enhances or resists attacks beyond the base power of moves.
+            There are four stats:
+                Attack (Atk)
+                Special Attack (Sp Atk)
+                Defense (Def)
+                Special Defense (Sp Def)
+            Each stat ranges from 0 to 6.
+
+            Stat Thresholds
+            Stats do not directly add or subtract damage per point. Instead, they provide bonuses at specific thresholds:
+            Attack / Special Attack
+            0–1 → +0 damage  
+            2–3 → +1 damage  
+            4–5 → +2 damage  
+            6   → +3 damage (maximum)
+            Defense / Special Defense
+            0–1 → -0 damage  
+            2–3 → -1 damage  
+            4–5 → -2 damage  
+            6   → -3 damage (maximum)
+
+            How Stats Work
+                Attack (Atk) increases bonus damage for Attack-type moves
+                Special Attack (Sp Atk) increases bonus damage for Special Attack-type moves
+                Defense (Def) reduces bonus damage from Attack-type moves
+                Special Defense (Sp Def) reduces bonus damage from Special Attack-type moves
+            Stats only affect bonus damage, not the base damage listed on cards.
+            Attack stats are always compared against the matching defense:
+                Atk vs Def
+                Sp Atk vs Sp Def
+
+            Key Rules
+                Stats never reduce base damage
+                Maximum bonus from stats is +3 / -3
+                Stats are applied before defense cards reduce damage
+                If damage would be reduced to 0 or less, it instead deals 1 damage, provided the user’s relevant attacking stat (Attack or Special Attack) is at least 2.
+
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- Attacking -->
+        <section>
+            <img src="images/attacking.png" alt="turn structure" id="attacking" class="headers" width="26%">
+        </section>
+
+        <section>
+            Attacking happens during the Attacking Phase of your turn. You are not required to attack.
+            Each Pokémon has an Innate Attack, which requires no AP to use but is very weak. It will always deal 1 damage. Tokens can modify it. You may only attack once per turn.
+
+            Typing
+            When attacking, compare the type of your attack move to the type of the opponent’s defense move.
+                Enhanced (type advantage): +2 damage
+                Weakened (type disadvantage): -2 damage
+                Neutral: no change
+            This system is called Typing.
+            Examples:
+                Fire attack vs Grass defense → Enhanced (+2)
+                Fire attack vs Water defense → Weakened (-2)
+                Fire attack vs Electric defense → Neutral
+
+            Attacking Details
+                Attacks require AP, listed on the card
+                Stronger moves typically cost more AP
+                If you don’t have enough AP (or choose not to spend it), you may use your Innate Attack instead
+                Buffs and debuffs are applied before damage is calculated
+                Status effects are applied after damage is dealt
+                You may only use one attack per turn
+
+            Overview
+            Attacking occurs during the Attacking Phase of your turn. You may choose to attack once per turn.
+            Each attack uses either:
+                Attack (Atk) or
+                Special Attack (Sp Atk)
+
+            Attack Steps
+            To perform an attack, resolve the following steps in order:
+                1. Declare Attack
+                    Choose one attack move from your active moves
+                    Pay the required AP cost
+                2. Opponent Defends
+                    The defending player selects one of their defense cards
+                    They pay the required AP cost
+                3. Calculate Base Damage
+                    Start with the attack’s listed damage
+                4. Apply Typing
+                    Enhanced: +2 damage (type advantage)
+                    Weakened: -2 damage (type disadvantage)
+                    Neutral: no change
+                5. Apply Stat Bonuses
+                    Determine which stats are used:
+                    Attack moves use Atk vs Def
+                    Special Attack moves use Sp Atk vs Sp Def
+                    Apply stat thresholds:
+                    Add attacker’s bonus
+                    Subtract defender’s bonus
+                6. Apply Defense Card
+                    Subtract the amount blocked by the defense card
+                7. Final Damage
+                    Deal the remaining damage to the defending Pokémon’s HP
+                    If damage is 0 or less, deal 1 damage instead
+                8. Resolve Effects
+                    Apply any status effects, buffs, or debuffs listed on the move
+
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- Defending -->
+        <section>
+            <img src="images/defending.png" alt="turn structure" class="headers" width="26%">
+        </section>
+
+        <section>
+            Defending occurs when your opponent attacks you.
+            You may use one of your active defense cards to reduce incoming damage.
+
+            Defending Rules
+                You may use 1 defense card per attack
+                Defense cards require AP to use
+                You must choose a defense card after the attack is declared
+
+            Strategy Notes
+            When defending, consider:
+                The type of the incoming attack (for Typing advantage)
+                Whether the attack is:
+                    Atk → use Def
+                    Sp Atk → use Sp Def
+            Choosing the correct defense card can significantly reduce damage.
+
+            Defense Resolution
+            During an attack:
+                1. Choose a defense card
+                2. Spend the required AP
+                3. Apply Typing (handled during attack calculation)
+                4. Subtract the defense card’s block value
+                5. Remaining damage is applied to your HP
+
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- Leveling Up -->
+        <section>
+            <img src="images/leveling_up.png" alt="turn structure" id="leveling" class="headers" width="26%">
+        </section>
+
+        <section>
+                All Pokémon start at Level 0
+                Max level is 8
+                Spend 10 EP + 10 AP to level up
+                Heal 5 HP (cannot exceed max HP cap) upon a  level up
+                Upon level up,  levels 1–4 → gain 1 stat point
+                Upon level up, levels 5–8 → gain 2 stat points
+            Total stat points at max level: 12
+                Each stat caps at 6
+                Choose carefully—you cannot max everything
+
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- Tokens -->
+        <section>
+            <img src="images/tokens.png" alt="turn structure" id="tokens" class="headers" width="18%">
+        </section>
+
+        <section>
+            Tokens can be obtained through using certain moves when attacking or defending.
+            They can provide:
+                Temporary buffs
+                Strategic advantages
+                (Token effects can vary depending on design)
+            Token List:
+                Sunny Day:
+                    Fire type moves do 1 extra damage.
+                    This token only applies to the next Fire type move used.
+                Grassy Terrain:
+                    Grass type moves do 1 extra damage.
+                    This token only applies to the next Grass type move used.
+                Place holder:
+                    Gain either 1 extra EP or 1 extra  AP during your upkeep phase.
+                    This token is removed once you have gained the point.
+                Place holder:
+
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- All Cards -->
+        <section>
+            <img src="images/all_cards.png" alt="turn structure" id="cards" class="headers" width="23%">
+        </section>
+
+        <section>
+            Status effects are applied after damage is dealt.
+            Every status effect:
+                Burn
+                Poison
+                Freeze
+                Paralysis
+                Bleed
+            Effects are activated/resolved during:
+                Upkeep phase
+                Or as specified on the card
+
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- Status Effects -->
+        <section>
+            <img src="images/status_effects.png" alt="turn structure" id="status" class="headers" width="37%">
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- Glossary -->
+        <section>
+            <img src="images/glossary.png" alt="turn structure" id="glossary" class="headers" width="23%">
+        </section>
 
     </main>
 
