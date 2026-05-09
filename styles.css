@@ -437,6 +437,12 @@ hr {
     width: 65%;
 }
 
+.smallHr {
+    border: solid;
+    color: black;
+    width: 20%;
+}
+
 /* ================= LIST STYLING ================= */
 
 .list1, .list2 {
